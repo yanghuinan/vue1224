@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="vue.js">
+
+    </script>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el:'#box',
+                data:{
+
+                },
+                methods:{
+                    show:function () {
+                        alert(1);
+
+                    }
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div id="box">
+
+       <!--<input type="text" @keydown.up="show()">-->
+    <!--<input type="text" @keydown.down="show()">-->
+    <!--<input type="text" @keydown.left="show()">-->
+    <input type="text" @keydown.right="show()">
+
+</div>
+</body>
+</html>

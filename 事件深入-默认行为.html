@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="vue.js">
+
+    </script>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el:'#box',
+                data:{
+
+                },
+                methods:{
+                    show:function (ev) {
+                        alert(1);
+                        ev.preventDefault();//阻止右键默认行为
+                    }
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div id="box">
+
+       <input type="button" value="按钮 " @contextmenu="show($event)">
+
+</div>
+</body>
+</html>
